@@ -11,16 +11,19 @@
     <!--Fuentes importadas-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <!--Titulo de la pagina-->
     <header>
-        <h1>Tienda de <span style="color: #037BC0;">muebles</span></h1>
+        <h1>Tienda de <span class="muebles">muebles</span></h1>
     </header>
     
     <!--Menu-->
-    <nav>
-        <ul>
+    <nav class="menu">
+        <ul >
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Nosotros</a></li>
             <li><a href="#">Tienda</a></li>
@@ -31,17 +34,17 @@
     </nav>
     
     <!--Hero-->
-    <div></div>
+    <section class="hero"></section>
 
     <!--Productos-->
     <h2>Nuestros Productos</h2>
-    <section>
+    <section class="prod">
         <!--Primera fila-->
-        <div>
+        <div class="fila1">
             <!--Columna 1-->
-            <div><img src="producto1.jpg" alt="Imagen del Producto 1"></div>
+            <div class="imagen img1"><img src="producto1.jpg" alt="Imagen del Producto 1" width="100%"></div>
             <!--Columna 2-->
-            <div style="background-color: blue; color: white;">
+            <div class="contenido">
                 <h3>Producto 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint suscipit fuga provident culpa?</p>
                 <strong>112,000.00</strong><br>
@@ -50,13 +53,14 @@
         </div>
 
         <!--Segunda fila-->
-        <div>
+        <div class="fila2">
             <!--Columna 1-->
-            <div>
-                <div>
-                    <img src="producto2.jpg" alt="Imagen del Producto 2">
+            <div class="col1">
+                
+                <div class="imagen img2">
+                    <img src="producto2.jpg" alt="Imagen del Producto 2" width="100%">
                 </div>
-                <div style="background-color: blue; color: #fff;">
+                <div class="contenido c2">
                     <h3>Producto 2</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptates adipisci similique modi.</p>
                     <strong>112,000.00</strong><br>
@@ -64,11 +68,11 @@
                 </div>
             </div>
             <!--Columna 2-->
-            <div>
-                <div>
-                    <img src="producto3.jpg" alt="Imagen del Producto 3">
+            <div class="col2">
+                <div class="imagen img3">
+                    <img src="producto3.jpg" alt="Imagen del Producto 3" width="100%">
                 </div>
-                <div style="background-color: blue; color: white;">
+                <div class="contenido c3">
                     <h3>Producto 3</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptates adipisci similique modi.</p>
                     <strong>112,000.00</strong><br>
@@ -78,13 +82,13 @@
         </div>
 
         <!--Tercer fila-->
-        <div>
+        <div class="fila3">
             <!--Columna 1-->
-            <div>
-                <div>
-                    <img src="producto4.jpg" alt="Imagen del Producto 4">
+            <div class="col1">
+                <div class="imagen img4">
+                    <img src="producto4.jpg" alt="Imagen del Producto 4" width="100%">
                 </div>
-                <div style="background-color: blue; color: #fff;">
+                <div class="contenido c4">
                     <h3>Producto 4</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores? Vel, magni eius.</p>
                     <strong>112,000.00</strong><br>
@@ -92,11 +96,11 @@
                 </div>
             </div>
             <!--Columna 2-->
-            <div>
-                <div>
-                    <img src="producto5.jpg" alt="Imagen del Producto 5">
+            <div class="col2">
+                <div class="imagen img5">
+                    <img src="producto5.jpg" alt="Imagen del Producto 5" width="100%">
                 </div>
-                <div style="background-color: blue; color: white;">
+                <div class="contenido c5">
                     <h3>Producto 5</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores? Vel, magni eius.</p>
                     <strong>112,000.00</strong><br>
@@ -104,11 +108,11 @@
                 </div>
             </div>
             <!--Columna 3-->
-            <div>
-                <div>
-                    <img src="producto6.jpg" alt="Imagen del Producto 6">
+            <div class="col3">
+                <div class="imagen img6">
+                    <img src="producto6.jpg" alt="Imagen del Producto 6" width="100%">
                 </div>
-                <div style="background-color: blue; color: white;">
+                <div class="contenido c6">
                     <h3>Producto 6</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores? Vel, magni eius.</p>
                     <strong>112,000.00</strong><br>
@@ -120,14 +124,39 @@
 
     <!--Categorías-->
     <h2>Categorias de Productos</h2>
-    <div>
-        <!--´
-            Fila con 3 columnas
-            Aquí puedo usar bootstrap
-        -->
-        <div><img src="categoria1.jpg" alt="Imagen categoria1"><a href="#">Oficina</a></img></div>
-        <div><img src="categoria2.jpg" alt="Imagen categoria2"><a href="#">Hogar</a></img></div>
-        <div><img src="categoria3.jpg" alt="Imagen categoria3"><a href="#">Cocina</a></img></div>
+    <div class="cate">
+        <div class="padre">
+        <div class="card uno">
+            <div class="img-container">
+                <div class="img"><img src="categoria1.jpg" alt="imagen de categoria1" width="100%"></div>
+                <div class="description card">
+                    <a href="#">
+                        <h3 class="title">Oficina</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card dos">
+            <div class="img-container">
+                <div class="img"><img src="categoria1.jpg" alt="imagen de categoria2" width="100%"></div>
+                <div class="description card">
+                    <a href="#">
+                        <h3 class="title">Hogar</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card tres">
+            <div class="img-container">
+                <div class="img"><img src="categoria3.jpg" alt="imagen de categoria3" width="100%"></div>
+                <div class="description card">
+                    <a href="#">
+                        <h3 class="title">Cocina</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
 
     <!--Footer-->
