@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
+        <!-- Bootstrap css -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+        
     <!--Fuentes importadas-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
@@ -16,6 +19,9 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
+    <!-- Bootstrap bundle -->
+    <script src="bootstrap.bundle.min.js"></script>
+
     <!--Titulo de la pagina-->
     <header>
         <h1>Tienda de <span class="muebles">muebles</span></h1>
@@ -23,7 +29,7 @@
     
     <!--Menu-->
     <nav class="menu">
-        <ul >
+        <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Nosotros</a></li>
             <li><a href="#">Tienda</a></li>
@@ -32,7 +38,24 @@
             <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
-    
+    <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Menu responsivo -->
+    <div></div>
+
     <!--Hero-->
     <section class="hero"></section>
 
@@ -44,27 +67,28 @@
             <!--Columna 1-->
             <div class="imagen img1"><img src="producto1.jpg" alt="Imagen del Producto 1" width="100%"></div>
             <!--Columna 2-->
-            <div class="contenido">
-                <h3>Producto 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint suscipit fuga provident culpa?</p>
+            <div class="contenido card" style="background-color: blue; height: 350px; border-radius: 0% 3% 3% 0%;">
+            <div class="card-body">
+                <h3 class="card-title">Producto 1</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint suscipit fuga provident culpa?</p>
                 <strong>112,000.00</strong><br>
-                <button><p>Agregar al carrito</p></button>
+                <button type="button" class="btn btn-success"><p>Agregar al carrito</p></button>
+            </div>
             </div>
         </div>
 
         <!--Segunda fila-->
         <div class="fila2">
             <!--Columna 1-->
-            <div class="col1">
-                
+            <div class="col1 card" style="background-color: red;">
                 <div class="imagen img2">
-                    <img src="producto2.jpg" alt="Imagen del Producto 2" width="100%">
+                    <img class="card-img-top" src="producto2.jpg" alt="Imagen del Producto 2" width="100%">
                 </div>
-                <div class="contenido c2">
-                    <h3>Producto 2</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptates adipisci similique modi.</p>
+                <div class="contenido c2 card-body">
+                    <h3 class="card-title">Producto 2</h3>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptates adipisci similique modi.</p>
                     <strong>112,000.00</strong><br>
-                    <button><p>Agregar al carrito</p></button>
+                    <button type="button" class="btn btn-success"><p>Agregar al carrito</p></button>
                 </div>
             </div>
             <!--Columna 2-->
@@ -76,7 +100,7 @@
                     <h3>Producto 3</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptates adipisci similique modi.</p>
                     <strong>112,000.00</strong><br>
-                    <button><p>Agregar al carrito</p></button>
+                    <button type="button" class="btn btn-success"><p>Agregar al carrito</p></button>
                 </div>
             </div>
         </div>
@@ -92,7 +116,7 @@
                     <h3>Producto 4</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores? Vel, magni eius.</p>
                     <strong>112,000.00</strong><br>
-                    <button><p>Agregar al carrito</p></button>
+                    <button type="button" class="btn btn-success"><p>Agregar al carrito</p></button>
                 </div>
             </div>
             <!--Columna 2-->
@@ -104,7 +128,7 @@
                     <h3>Producto 5</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores? Vel, magni eius.</p>
                     <strong>112,000.00</strong><br>
-                    <button><p>Agregar al carrito</p></button>
+                    <button type="button" class="btn btn-success"><p>Agregar al carrito</p></button>
                 </div>
             </div>
             <!--Columna 3-->
@@ -116,7 +140,7 @@
                     <h3>Producto 6</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, maiores? Vel, magni eius.</p>
                     <strong>112,000.00</strong><br>
-                    <button><p>Agregar al carrito</p></button>
+                    <button type="button" class="btn btn-success"><p>Agregar al carrito</p></button>
                 </div>
             </div>
         </div>

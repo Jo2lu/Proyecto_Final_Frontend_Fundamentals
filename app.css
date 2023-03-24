@@ -11,7 +11,7 @@ body, html {
     text-align: center;
     background-color: moccasin;
 }
-}
+
 h1, h2, h3 {
     font-family: 'Playfair Display', serif; 
 }
@@ -44,11 +44,14 @@ ul {
     padding-right: 40px;
     padding-left: 40px;
 }
+.menu a {
+    color: wheat;
+}
 
 /*Hero-----------------------------------------------------------------------------------*/
 .hero {
     background-image: url(principal.jpg) ;
-    height: 25rem;
+    height: 35rem;
     background-position: center 70%;
     background-size: cover;
     
@@ -64,9 +67,10 @@ ul {
     width: 85%;
     margin: 0 auto;
     /*background-color: burlywood;*/
-    
 }
-
+.prod h3 {
+    font-size: 2.5em;
+}
 /*fila 1-------------------------------------------*/
 .fila1 {
    display: grid;
@@ -74,7 +78,7 @@ ul {
    overflow: hidden;
     margin: 0 auto;
     height: 350px;
-    border-radius: 7% 0%;
+    border-radius: 3%;
 }
 .img1 {
     display: flex;
@@ -199,9 +203,9 @@ ul {
   
   .img {
     transition: all .3s;
-    background: #ff0084;
-    background: -webkit-linear-gradient(to right, #33001b, #ff0084);
-    background: linear-gradient(to right, #33001b, #ff0084);
+    background: #ff5100;
+    background: -webkit-linear-gradient(to right, #33001b, #ff5100);
+    background: linear-gradient(to right, #33001b, #ff5100);
     width: 100%;
   }
   
@@ -250,7 +254,6 @@ footer {
     flex-wrap: wrap;
     gap: 4rem;
     /* background-color: #00eeff; */
-
 }
 footer h3 {
     font-size: 2em;
@@ -258,12 +261,23 @@ footer h3 {
 footer ul {
     margin: 0;
 }
+
+/* bootstrap y @media-----------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:768px){
+    .menu ul {
+        display: block;
+        justify-content: left;
+    }
+}
+@media screen and (max-width:768px){
+    .hero {
+        height: 25rem;
+    }
+}
+
 /*General pruebas*/
-
-
 .contenido {
     border-bottom-width: 0px;
-
     padding: 0;
     margin: 0;
 }
@@ -271,8 +285,4 @@ footer ul {
 p {
     margin: 0;
 }
-
 /*Responsive*/
-.hero {
-
-}
