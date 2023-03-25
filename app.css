@@ -75,6 +75,8 @@ ul {
 .prod h3 {
     font-size: 2.5em;
 }
+.prod p {margin-bottom: 0;}
+.prod button {background-color: #8cbc00;}
 
 /*fila 1-------------------------------------------*/
 .fila1 {
